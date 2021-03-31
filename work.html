@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Work</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	/* animasi judul dan foto gerak */
+		@keyframes animasiJudul {
+			from {
+				left: 400px;
+				top: 50px;
+			}
+			to {
+				filter: opacity(1);
+			}
+		}
+		@keyframes animasiFoto {
+			from {
+				margin: 160px 0 0 500px;
+			}
+			to {
+				filter: opacity(1);
+			}
+		}
+
+		@keyframes animasi {
+			from {
+				margin: 100px 0 0 0;
+			}
+			to {
+				filter: opacity(1);
+			}
+		}
+		.judulgallery {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 50px;
+			filter: opacity(0);
+			animation: animasiJudul 1s;
+			animation-fill-mode: forwards;
+		}
+		.foto1 {
+			position: absolute;
+			margin: 100px 0 0 100px;
+			box-shadow: 0 4px 8px 0 black;
+			animation: animasiFoto 1s;
+			animation-delay: 1s;
+			filter: opacity(0);
+			animation-fill-mode: forwards;
+		}
+		.foto2 {
+			position: absolute;
+			margin: 320px 0 0 100px;
+			box-shadow: 0 4px 8px 0 black;
+			animation: animasiFoto 1s;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+			filter: opacity(0);
+		}
+		.foto3 {
+			position: absolute;
+			margin: 100px 0 0 500px;
+			box-shadow: 0 4px 8px 0 black;
+			animation: animasiFoto 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			filter: opacity(0);
+		}
+		.foto4 {
+			position: absolute;
+			margin: 320px 0 0 500px;
+			box-shadow: 0 4px 8px 0 black;
+			animation: animasiFoto 1s;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+			filter: opacity(0);
+		}
+		.foto5 {
+			position: absolute;
+			margin: 100px 0 0 900px;
+			box-shadow: 0 4px 8px 0 black;
+			animation: animasiFoto 1s;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+			filter: opacity(0);
+		}
+		.foto6 {
+			position: absolute;
+			margin: 320px 0 0 900px;
+			box-shadow: 0 4px 8px 0 black;
+			animation: animasiFoto 1s;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+			filter: opacity(0);
+		}
+
+	</style>
+</head>
+<body>
+<!--header-->	
+<div class="header">
+    <div class="judul">
+        <img src="photo/ava.png" width="70px" height="70px">
+        <h1>TEGAR</h1>
+    </div>
+	<!--navbar-->
+    <a href="index.html"><h1 class="home">HOME</h1></a>
+    <a href="work.html"><h1 class="work">WORK</h1></a>
+    <a href="about.html"><h1 class="about">ABOUT</h1></a>
+	<a href="contact.html"><h1 class="contact">CONTACT</h1></a>
+</div>
+<div class="main">
+	<!-- gallery foto -->
+<div class="gallery">
+	<h1 class="judulgallery">My Work</h1>
+	<div class="foto1">
+		<img src="photo/foto-1.jpg" width="340px" height="203px">
+	</div>
+	<div class="foto2">
+		<img src="photo/foto-2.jpg" width="340px" height="209px">
+	</div>
+	<div class="foto3">
+		<img src="photo/foto-3.jpg" width="340px" height="210px">
+	</div>
+	<div class="foto4">
+		<img src="photo/foto-4.jpg" width="340px" height="210px">
+	</div>
+	<div class="foto5">
+		<img src="photo/foto-5.jpg" width="340px" height="210px">
+	</div>
+	<div class="foto6">
+		<img src="photo/foto-6.jpg" width="340px" height="210px">
+	</div>
+
+</div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="footerContact">
+        <h2>Contact</h2>
+            <br> <br>
+            <h4>
+            Whatsapp +62 89670522489 <br>
+            Instagram @tgrsnts <br>
+            Mail tegarsantoso72@gmail.com
+            </h4>
+    </div>
+    <div class="lokasi">
+        <h2>My Office</h2>
+        <br><br>
+        <h4>
+        Jl. M.H Thamrin No. 102 <br>
+        Menteng <br> 
+        Jakarta Pusat <br>
+        Indonesia
+        </h4> 
+    </div>
+</div>
+<div class="copyrights">
+    <h4>Copyrights &copy; 2020 - Tegar. All rights deserved.</h4>
+</div>
+</body>
+</html>

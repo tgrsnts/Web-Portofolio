@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tegar's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="">
+        /* animasi foto, bio */
+        .foto {
+            top: 70px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 180px;
+            border-radius: 90px 90px 90px 90px;
+            animation: animasiFoto 2s; 
+        }
+
+        @keyframes animasiFoto {
+            from {
+                filter: opacity(0);
+            }
+            to {
+                filter: opacity(1);
+            }
+        }
+
+        .name {
+            position: absolute;
+            font-size: 30px;
+            top: 260px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animasiName 1s;
+        }
+
+        @keyframes animasiName {
+            from {
+                left: 300px;
+                filter: opacity(0);
+            }
+            to {
+                filter: opacity(1);
+            }
+        }
+
+        .desc {
+            text-align: center;
+            font-family: SanFraciscoLight;
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animasiDesc 1s;
+            animation-delay: 0.5s;
+            filter: opacity(0);
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animasiDesc {
+            from {
+                text-align: center;
+                left: 300px;
+                filter: opacity(0);
+
+            }
+            to {
+                text-align: center;
+                left: 50%;
+                transform: translateX(-50%);
+                color: black;
+                filter: opacity(1);           
+            }
+        }
+	</style>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+    <div class="judul">
+        <img src="photo/ava.png" width="70px" height="70px">
+        <h1>TEGAR</h1>
+    </div>
+    <!--navbar-->
+    <a href="index.html"><h1 class="home">HOME</h1></a>
+    <a href="work.html"><h1 class="work">WORK</h1></a>
+    <a href="about.html"><h1 class="about">ABOUT</h1></a>
+	<a href="contact.html"><h1 class="contact">CONTACT</h1></a>
+</div>
+<div class="main">
+    <!--Foto dan bio-->>
+	<img class="foto" src="photo/pict.jpg">
+    <h4 class="name">Hi, I'm Tegar!</h4>
+	<div class="desc">
+		<p>Hello I'm Mochamad Tegar Santoso, a very junior Web Designer.</p>
+		<p>I'm 16, and I'm in 10th grade right now. I'm studying in SMKN 1 Cibinong,</p>
+		<p>and I learn to create a Website in a organisation named Nevtik.</p>
+        <br>
+        <p>Please contact me if you want to make a Website. I'd serve</p>
+        <p>you with my pleasure.</p>
+	</div>
+</div>
+<!--Footer-->
+<div class="footer">
+    <div class="footerContact">
+        <h2>Contact</h2>
+            <br> <br>
+            <h4>
+            Whatsapp +62 89670522489 <br>
+            Instagram @tgrsnts <br>
+            Mail tegarsantoso72@gmail.com
+            </h4>
+    </div>
+    <div class="lokasi">
+        <h2>My Office</h2>
+        <br><br>
+        <h4>
+        Jl. M.H Thamrin No. 102 <br>
+        Menteng <br> 
+        Jakarta Pusat <br>
+        Indonesia
+        </h4> 
+    </div>
+</div>
+<div class="copyrights">
+    <h4>Copyrights &copy; 2020 - Tegar. All rights deserved.</h4>
+</div>
+</body>
+</html>

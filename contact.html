@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	/* animasi logo bergerak dari kiri ke tengah */
+		@keyframes animasiLogoGerak {
+			from {
+				left: 500px;
+				top: 350px;
+				filter: opacity(0);
+			}
+			to {
+				filter: opacity(1);
+			}
+		}
+		
+		#logoWa {
+			animation: animasiLogoGerak 0.8s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.5s;
+		}
+		.logoIg {
+			animation: animasiLogoGerak 0.8s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.5s;
+		}
+		.logoGmail {
+			animation: animasiLogoGerak 0.8s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.5s;
+		}
+		.logoMaps{
+			animation: animasiLogoGerak 0.8s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.5s;
+		}
+
+		/*Tombol yang bisa di-klik*/
+		#logoWa {
+			left: 500px;
+			top: 100px;
+			position: absolute;
+			border: 1px solid #e4fbff;
+			width: 500px;
+			height: 75px;
+			transition: 8ms;
+			filter: opacity(0);
+		}
+		#linkWa h4 {
+			position: absolute;
+			font-size: 30px;
+			left: 90px;
+			bottom: 20px;
+		}
+
+		.logoIg {
+			position: absolute;
+			top: 200px;
+			left: 500px;
+			border: 1px solid #e4fbff;
+			width: 500px;
+			height: 75px;
+			transition: 8ms;
+			filter: opacity(0);
+		}
+
+		.linkIg h4 {
+			position: absolute;
+			font-size: 30px;
+			left: 90px;
+			bottom: 20px;
+		}
+
+		.logoGmail {
+			position: absolute;
+			top: 300px;
+			left: 500px;
+			border: 1px solid #e4fbff;
+			width: 500px;
+			height: 75px;
+			transition: 8ms;
+			filter: opacity(0);
+		}
+
+		.linkGmail h4  {
+			position: absolute;
+			font-size: 30px;
+			left: 90px;
+			bottom: 20px;
+		}
+
+		.logoMaps {
+			position: absolute;
+			top: 400px;
+			left: 500px;
+			border: 1px solid #e4fbff;
+			width: 500px;
+			height: 75px;
+			transition: 8ms;
+			filter: opacity(0);
+		}
+
+		.linkMaps h4 {
+			position: absolute;
+			font-size: 30px;
+			left: 90px;
+			bottom: 20px
+		}
+
+		/*animasi buat background biru :hover*/
+
+		#logoWa:hover {
+			border: 1px solid lightblue;
+			background-color: lightblue;
+			width: 500px;
+			height: 75px;
+		}
+		.logoIg:hover {
+			border: 1px solid lightblue;
+			background-color: lightblue;
+			width: 500px;
+			height: 75px;
+		}
+		.logoGmail:hover {
+			border: 1px solid lightblue;
+			background-color: lightblue;
+			width: 500px;
+			height: 75px;
+		}
+		.logoMaps:hover {
+			border: 1px solid lightblue;
+			background-color: lightblue;
+			width: 500px;
+			height: 75px;
+		}
+	</style>
+</head>
+<body>
+<!--header-->
+<div class="header">
+    <div class="judul">
+        <img src="photo/ava.png" width="70px" height="70px">
+        <h1>TEGAR</h1>
+    </div>
+	<!--navbar-->
+    <a href="index.html"><h1 class="home">HOME</h1></a>
+    <a href="work.html"><h1 class="work">WORK</h1></a>
+    <a href="about.html"><h1 class="about">ABOUT</h1></a>
+	<a href="contact.html"><h1 class="contact">CONTACT</h1></a>
+</div>
+
+<div class="main">
+	<div id="logoWa">
+		<!--logo sosial media yang bisa di-klik-->
+		<a href="https://api.whatsapp.com/send?phone=6289670522489" id="linkWa">
+		<img src="photo/logo-wa.png" width="70px" height="70px">
+		<h4 style="color: black">Whatsapp</h4>
+		</a>
+	</div>
+	<div class="logoIg">
+		<a href="https://instagram.com/tgrsnts" class="linkIg">
+			<img src="photo/logo-ig.png" width="70px" height="70px">
+			<h4 style="color: black">Instagram</h4>
+		</a>
+	</div>
+	<div class="logoGmail">
+		<a href="https://mailto:tegarsantoso72@gmail.com" class="linkGmail">
+			<img src="photo/logo-gmail.png" width="70px" height="70px">
+			<h4 style="color: black">tegarsantoso72@gmail.com</h4>
+		</a>
+	</div>
+	<div class="logoMaps">
+    	<a href="https://goo.gl/maps/EqzWKhw9STut3yeP7" class="linkMaps">
+    		<img src="photo/logo-maps.png" width="70px" height="70px" >
+    		<h4 style="color: black;">Office</h4>
+    	</a>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="footerContact">
+        <h2>Contact</h2>
+            <br> <br>
+            <h4>
+            Whatsapp +62 89670522489 <br>
+            Instagram @tgrsnts <br>
+            Mail tegarsantoso72@gmail.com
+            </h4>
+    </div>
+    <div class="lokasi">
+        <h2>My Office</h2>
+        <br><br>
+        <h4>
+        Jl. M.H Thamrin No. 102 <br>
+        Menteng <br> 
+        Jakarta Pusat <br>
+        Indonesia
+        </h4> 
+    </div>
+</div>
+<div class="copyrights">
+    <h4>Copyrights &copy; 2020 - Tegar. All rights deserved.</h4>
+</div>
+</body>
+</html>
